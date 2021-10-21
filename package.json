@@ -1,0 +1,31 @@
+{
+    "name": "dropdrive",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "env-cmd -f ./config/env/test.env jest --watch --runInBand",
+        "start": "node ./src/index.js",
+        "dev": "nodemon ./src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "aws-sdk": "^2.1006.0",
+        "bcryptjs": "^2.4.3",
+        "bluebird": "^3.7.2",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mysql2": "^2.3.0",
+        "redis": "^3.1.2",
+        "validator": "^13.6.0"
+    },
+    "devDependencies": {
+        "env-cmd": "^10.1.0",
+        "jest": "^27.2.5",
+        "nodemon": "^2.0.13",
+        "redis-mock": "^0.56.3",
+        "supertest": "^6.1.6"
+    }
+}
